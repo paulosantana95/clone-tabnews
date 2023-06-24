@@ -1,2 +1,2 @@
 # clone-tabnews
-Repositória criado para curso do Felipe Deschamps
+Repositório criado para o curso do Felipe Deschamps.
