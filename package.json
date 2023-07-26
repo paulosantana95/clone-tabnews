@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "lint:check": "prettier --check .",
-    "lint:fix": "prettier --write .",
-    "vercel-build": "next build"
+    "lint:fix": "prettier --write ."
   },
   "author": "",
   "license": "MIT",
