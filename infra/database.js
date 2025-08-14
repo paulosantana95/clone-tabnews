@@ -25,6 +25,8 @@ async function getNewClient() {
     ssl: getSSLValues(),
   });
 
+  console.log("Connecting to database...");
+
   await client.connect();
   return client;
 }
