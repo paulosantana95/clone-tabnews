@@ -37,7 +37,7 @@ async function setSessionCookie(sessionToken, response) {
   const setCookie = cookie.serialize("session_id", sessionToken, {
     path: "/",
     maxAge: session.EXPIRATION_IN_MILLISECONDS / 1000,
-    secure: process.env.NODE_ENV !== "development",
+    secure: process.env.NODE_ENV === "production",
     httpOnly: true,
   });
 
@@ -48,7 +48,7 @@ async function clearSessionCookie(response) {
   const setCookie = cookie.serialize("session_id", "invalid", {
     path: "/",
     maxAge: -1,
-    secure: process.env.NODE_ENV !== "development",
+    secure: process.env.NODE_ENV === "production",
     httpOnly: true,
   });
 
